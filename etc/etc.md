@@ -50,3 +50,25 @@
     * 파일 관리 
 
 #### AS계정 최신화 방법
+vpn 접속 -> teams/개발팀/GM/FNR환경 -> GM계정으로 로그인 apa\ -> 접속 경로에 적힌대로 -> 바꾸고 바뀐 패스워드 , 유효기간 최신화 (엑셀)
+
+#### 라이브러리가 라이브러리를 의존
+
+#### Dependency Hierachy 
+
+#### JAR vs WAR
+
+* JAR
+  * JAVA 어플리케이션이 동작할 수 있도록 자바 프로젝트를 압축한 파일
+  * Class(JAVA리소스, 속성 파일), 라이브러리 파일을 포함함
+  * JRE(JAVA Runtime Enviroment)만 있어도 실행 가능
+
+* WAR
+  * Servlet / Jsp 컨테이너에 배치할 수 있는 웹 어플리케이션(Web Application) 압축파일 포맷
+  * 웹 관련 자원을 포함함(정적리소스)
+  * 사전 정의된 구조 사용(WEB-INF, META-INF)
+  * 별도의 웹서버(WEB) or 웹 컨테이너(WAS) 필요
+  * "즉, JAR 파일의 일종으로 웹 어플리케이션 전체를 패키징 하기 위한 JAR파일"
+#### What is fully qualified classname?
+
+* 해당 클래스가 속한 패키지명까지 붙여 쓴 클래스의 이름
