@@ -1,15 +1,27 @@
-## oop 프로그램 설계 원칙(SOLID)
+# 2. oop 프로그램 설계 원칙(SOLID)
 
 
-### SRP(Single Responsibility Principle) 단일 책임 원칙
-
+## 1) SRP(Single Responsibility Principle) 단일 책임 원칙
 * 하나의 component 는 한가지 일만 수행
-* 그것을 올바르게 수행
+* \*모듈이 변경되는 이유가 한가지여야 함
 
-### DIP(Dependency Inversion Principle) 의존성 역전 원칙
+## 2) OCP(Open-Closed Principle) 개방 폐쇄 원칙
+* 확장에 대해 열려 있어야 함 (인터페이스)
+  * 요구사항이 변경 될 때 새로운 동작을 추가하여 애플리케이션 기능을 확장 할 수 있어야 함
+* 수정에 대해 닫혀 있어야 함
+  * 기존의 코드를 수정하지 않고 애플리케이션의 동작을 추가하거나 변경 할 수 있어야 함
 
+## 3) LSP(Liskov Substitution Principle) 리스코프 치환 원칙
+* 하위 타입은 상위 타입을 대체할 수 있어햐 함
+* 해당 객체를 사용하는 클라이언트는 상위 타입이 하위 타입으로 변경되어도, 차이점을 인식하지 못한 채 상위 타입의 퍼블릭 인터페이스를 통해 서브 클래스를 사용할 수 있어야 함
+
+## 4) ISP(Interface segregation principle) 인터페이스 분리 원칙
+* 목적과 관심이 각기 다른 클라이언트가 있다면 인터페이스를 통해 적절하게 분리해줘야 함
+* 클라이언트의 목적과 용도에 적합한 인터페이스 만을 제공
+* 모든 클라이언트가 자신의 관심에 맞는 퍼블릭 인터페이스(외부에서 접근 가능한 메세지)만을 접근하여 불필요한 간섭을 최소화할 수 있어야 함
+
+## 5) DIP(Dependency Inversion Principle) 의존성 역전 원칙
 * 코드상에 어떤 의존성이든 그 방향을 바꿀 수 있음
+* 고수준 모듈은 저수준 모듈의 구현에 의존해서는 안 되며, 저수준 모듈이 고수준 모듈에 의존해야 한다는 것
 
-&nbsp;\*엔터티(Entity)<br>
--업무에 필요하고 유용한 정보를 저장하고 관리하기 위한 "어떤 것(Thing)"<br>
--데이터베이스 테이블이라고 생각
+### [[목차]](https://gitlab.theuber.co.kr:8989/study/ch.kim/-/blob/main/study/index.md)
